@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container
+    {
+       display: grid; 
+       grid-template-columns:250px 250px 250px 250px 250px;
+       grid-template-rows: 300px 300px 300px 300px ;
+       background-color: greenyellow;
+       width: 1255px;
+       gap: 2px;
+        }
+        .one{
+          grid-column-start: 1;
+          grid-column-end: 6;
+          border: 2px solid black;
+          border-radius: 5px;
+        }
+        .two
+        {
+          grid-row-start:2 ;
+          grid-row-end: 4;
+         border: 2px solid black;
+        }
+        .three
+        {
+           grid-column-start: 2;
+           grid-column-end:6;
+          border: 2px solid black;
+        }
+        .four{
+          grid-column-start:2 ;
+          grid-column-end:4 ;
+          border: 2px solid black;
+        }
+        .five{
+          grid-column-start:4;
+          grid-column-end:6;
+         border: 2px solid black;
+        }
+        .six
+        {
+          grid-column-start: 1;
+          grid-column-end:6 ;
+          border: 2px solid black;
+        }
+        @media (max-width:418px){
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+        }
+    
+  </style>
+</head>
+<body>
+  <div  class="container">
+     <div class="one">Header </div>
+     <div class="two">Sidebar</div>
+     <div class="three">content1</div>
+     <div class="four">content2</div>
+     <div class="five" >content3</div>
+     <div class="six">footer</div>
+
+  </div>
+</body>
+</html>
