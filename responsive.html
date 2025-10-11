@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- for Responsive -->
+  <title>Document</title>
+  <style>
+.first
+{
+  color: rgb(18, 18, 230);
+}
+@media print {
+  .first{
+    color: red;
+  }
+}
+@media screen and (max-width:600px) {
+  .first{
+    color: yellow;
+  }
+}
+@media screen and (max-width:400px) {
+  .first{
+    color: purple;
+  }
+}
+.second{
+  background-color:black;
+  height: 100px;
+}
+@media screen and (max-width:900px) {
+  .second{
+    background-color: yellow;
+  }
+}
+@media screen and (max-width:600px) {
+  .second{
+    background-color:blue;
+  }
+}
+@media screen and (max-width:300px) {
+  .second{
+    background-color: rgb(193, 8, 8);
+  }
+}
+/* in media query order is import  */
+/* min width 600 : 600 and above 600
+max width 600: 0 to 600 */
+.three
+{
+  background-color:red;
+  height: 100px;
+}
+@media screen and (min-width:600px){
+  .three{
+    background-color:blue;
+  }
+  
+}
+@media screen and (min-width:700px){
+  .three{
+    background-color: yellow;
+  }
+}
+.one{
+  background-color: black;
+  margin: 5px;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+}
+
+  </style>
+</head>
+<body>
+  <h1 class="first">Responsive website</h1>
+  <div class="second">box</div>
+  <br>
+  <div class="three">box2</div>
+  <br>
+  <br>
+  <div>  
+    <div class="one">box</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit in, possimus aliquid ducimus laboriosam odit quis enim libero consectetur autem illo nesciunt eius quaerat quae!</p>
+</div>
+
+</body>
+</html>
