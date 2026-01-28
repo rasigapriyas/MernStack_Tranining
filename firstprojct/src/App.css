@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.navbar ul
+{
+    background-color: rgb(3, 3, 149);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    list-style: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.navbar li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar li a:hover
+{
+    color: rgb(34, 159, 236);
+    text-decoration:solid
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product
+{
+    background-color: rgb(18, 233, 244);
+    padding: 10px;
+    height: 250px;
+    width: 250px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.product h4
+{
+    font-size: 25px;
 }
-
-.card {
-  padding: 2em;
+.product h5
+{
+    font-size: 20px;
 }
-
-.read-the-docs {
-  color: #888;
+.products
+{
+    display: flex;
+    justify-content: space-around;
+}
+.product button
+{
+  padding: 8px;
+  border-radius: 10px;
+  background-color: blue;
+ 
+}
+.product button a{
+text-decoration: none;
+ color:white;
 }
